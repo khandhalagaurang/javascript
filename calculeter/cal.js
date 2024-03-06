@@ -1,19 +1,26 @@
 let tr ='';
 const adddata = (i) =>{
     tr += i;
-    document.getElementById("num").value = tr;
+    let a = tr.charAt(0)
+    if ( a=='' || a=='*' || a=='+' || a=='/' || a=='%') {
+        tr = '';
+        return ;
+    }else{
+        document.getElementById("num").value = tr;
+    }
+    
 }
 
 function getans() {
     let data = document.getElementById("num").value;
     let ans = eval(data);
     document.getElementById("num").value = ans;
-    tr = ' ';
+    tr = '';
 }
 
 function clearall() {
-    document.getElementById("num").value = ' ';
-    tr = ' ';
+    document.getElementById("num").value = '';
+    tr = '';
 }
 
 function backspace() {
