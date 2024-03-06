@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.input {
+    padding: 10px;
+    font-size: 18.4px;
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 10px;
+}
+
+
+button {
+    height: 50px;
+    width: 54px;
+    padding: 12px;
+    margin: 4px;
+    font-size: 20px;
+    background-color: rgb(222, 219, 219);
+    border-radius: 10px;
+    border: 0px;
+}
+button:hover{
+    background-color: black;
+    color: azure;
+}
+.colour{
+    color: rgb(249, 4, 4);
+}
+
+.cal{
+    padding: 18px;
+    border: 2px solid black;
+    background-color: rgb(226, 241, 241);
+    border-radius: 10px;
+}
